@@ -56,7 +56,7 @@ public class Data {
 	}
 
 	public static void addEmployee(String name, String designation, String business, String manager) throws IOException {
-		Files.write(Paths.get("Data.txt"), ("\n" + idGenerator + "," + name + "," + designation + "," + business  + "," + manager).getBytes(), StandardOpenOption.APPEND);
+		Files.write(Paths.get("EmployeeData.txt"), ("\n" + idGenerator + "," + name + "," + designation + "," + business  + "," + manager).getBytes(), StandardOpenOption.APPEND);
 		EmployeeData.add(new EmployeeModel(idGenerator, name, designation, business, manager));
 		idGenerator++;
 	}
