@@ -39,5 +39,5 @@
             <Button fx:id="Annoucements" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="241.0" prefWidth="237.0" text="Announcements" GridPane.columnIndex="2" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-   </children>
+   </children>				
 </AnchorPane>
