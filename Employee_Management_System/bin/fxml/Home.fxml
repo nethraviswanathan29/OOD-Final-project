@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="856.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-7.0" prefHeight="200.0" prefWidth="1320.0" style="-fx-background-color: #A9B7C0;">
+         <children>
+            <Label layoutX="31.0" layoutY="82.0" prefHeight="37.0" prefWidth="566.0" text="Employee Management System" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane hgap="10.0" layoutX="298.0" layoutY="227.0" prefHeight="505.0" prefWidth="717.0" vgap="10.0" AnchorPane.topAnchor="227.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="230.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="235.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="247.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="248.0" minHeight="10.0" prefHeight="248.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="Dashboard" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="241.0" prefWidth="237.0" text="Dashboard" />
+            <Button fx:id="Employees" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="241.0" prefWidth="237.0" text="Employees" GridPane.columnIndex="1" />
+            <Button fx:id="Salaries" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="241.0" prefWidth="237.0" text="Salaries" GridPane.rowIndex="1" />
+            <Button fx:id="Workshops" layoutX="250.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="241.0" prefWidth="235.0" text="Workshops" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="Departments" layoutX="250.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="241.0" prefWidth="237.0" text="Departments" GridPane.columnIndex="2" />
+            <Button fx:id="Annoucements" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="241.0" prefWidth="237.0" text="Announcements" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

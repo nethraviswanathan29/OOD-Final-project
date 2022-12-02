@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="1320.0" style="-fx-background-color: #A9B7C0;">
+         <children>
+            <Label layoutX="51.0" layoutY="82.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="dashboardHome" layoutX="1222.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="Home">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <HBox layoutX="68.0" layoutY="282.0" prefHeight="182.0" prefWidth="1297.0" spacing="30.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="289.0" style="-fx-background-color: #656e73;">
+               <children>
+                  <Label layoutX="69.0" layoutY="125.0" text="Total No of Employees" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="83.0" layoutY="40.0" prefHeight="68.0" prefWidth="123.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="177.0" prefWidth="307.0" style="-fx-background-color: #87929a;">
+               <children>
+                  <Label layoutX="71.0" layoutY="127.0" text="Billable Hours This Week" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="97.0" layoutY="40.0" prefHeight="68.0" prefWidth="113.0" text="560" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="292.0" style="-fx-background-color: #768086;">
+               <children>
+                  <Label layoutX="117.0" layoutY="123.0" text="Holidays" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="117.0" layoutY="35.0" prefHeight="68.0" prefWidth="59.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="182.0" prefWidth="317.0" style="-fx-background-color: #555c60;">
+               <children>
+                  <Label layoutX="68.0" layoutY="121.0" text="Over Time Hours Recorded" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="39.0" prefHeight="68.0" prefWidth="59.0" text="15" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <SplitPane dividerPositions="0.7054054054054054" layoutX="68.0" layoutY="508.0" prefHeight="257.0" prefWidth="1297.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="569.0">
+               <children>
+                  <TableView layoutX="1.0" layoutY="-1.0" prefHeight="255.0" prefWidth="910.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="305.0">
+               <children>
+                  <PieChart prefHeight="255.0" prefWidth="378.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
