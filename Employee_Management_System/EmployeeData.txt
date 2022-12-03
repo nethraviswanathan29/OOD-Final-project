@@ -1,5 +1,5 @@
-1,Jones,Manager,Business,Khaled
-2,Kaushik,Data Architect,Data,Jones
-3,Nethra,Data Scientist,ML,Jones
-4,Shobith,Developer,Development,Jones
-5,Ruchithra,Designer,UI,Jones
+1,Jones,Manager,HR,Khaled
+2,Kaushik,Engineer,Back-End,Jones
+3,Nethra,Engineer,Front-End,Jones
+4,Shobith,Engineer,Back-End,Jones
+5,Ruchithra,Engineer,Testing,Jones

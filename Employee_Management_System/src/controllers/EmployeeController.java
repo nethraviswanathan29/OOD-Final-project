@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import data.Data;
+import data.EmployeeData;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -79,8 +79,8 @@ public class EmployeeController implements Initializable {
     	designation.setCellValueFactory(new PropertyValueFactory<>("Designation"));
     	department.setCellValueFactory(new PropertyValueFactory<>("Department"));
     	reportsTo.setCellValueFactory(new PropertyValueFactory<>("ReportsTo"));
-    	Data.loadData();
-    	employeesTable.setItems(Data.EmployeeData);
+    	EmployeeData.loadData();
+    	employeesTable.setItems(EmployeeData.employeeData);
     }
 
     private void loadStage(String fxml) {

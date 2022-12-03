@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import data.Data;
+import data.EmployeeData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -41,7 +41,7 @@ public class NewEmployeeController implements Initializable {
 	
 	public void handleButtonClicks(ActionEvent mouseEvent) throws IOException {
         if (mouseEvent.getSource() == add) {
-        	Data.addEmployee(name.getText(), designation.getText(), department.getText(), manager.getText());
+        	EmployeeData.addEmployee(name.getText(), designation.getText(), department.getText(), manager.getText());
         	Stage stage = (Stage) cancel.getScene().getWindow();
             stage.close();
             Alert alert = new Alert(AlertType.INFORMATION);

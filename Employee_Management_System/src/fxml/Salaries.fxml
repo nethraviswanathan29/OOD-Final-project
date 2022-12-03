@@ -25,13 +25,13 @@
             </Button>
          </children>
       </Pane>
-      <TableView layoutX="289.0" layoutY="345.0" prefHeight="200.0" prefWidth="742.0">
+      <TableView fx:id="salaryTable" layoutX="289.0" layoutY="345.0" prefHeight="200.0" prefWidth="742.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="75.0" text="Employee Name" />
-            <TableColumn prefWidth="75.0" text="Salary per Annum" />
-            <TableColumn prefWidth="75.0" text="Salary Revision Cycle" />
-            <TableColumn prefWidth="75.0" text="Employee Type" />
+          <TableColumn fx:id="employeeId" prefWidth="75.0" text="Employee Id" />
+          <TableColumn fx:id="employeeName" prefWidth="75.0" text="Employee Name" />
+            <TableColumn fx:id="salaryPerAnnum" prefWidth="75.0" text="Salary per Annum" />
+            <TableColumn fx:id="salaryRevision" prefWidth="75.0" text="Salary Revision" />
+            <TableColumn fx:id="employeeType" prefWidth="75.0" text="Employee Type" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

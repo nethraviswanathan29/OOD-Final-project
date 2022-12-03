@@ -15,11 +15,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.EmployeeModel;
 
-public class Data {
+public class EmployeeData {
 
 	private static int idGenerator;
 
-	public static ObservableList<EmployeeModel> EmployeeData;
+	public static ObservableList<EmployeeModel> employeeData;
 
 	public static void loadData() throws IOException {
 
@@ -51,13 +51,13 @@ public class Data {
 					return emp;
 				}).collect(Collectors.toList());
 
-		EmployeeData = FXCollections.observableArrayList(employeeList);
+		employeeData = FXCollections.observableArrayList(employeeList);
 
 	}
 
 	public static void addEmployee(String name, String designation, String business, String manager) throws IOException {
 		Files.write(Paths.get("EmployeeData.txt"), ("\n" + idGenerator + "," + name + "," + designation + "," + business  + "," + manager).getBytes(), StandardOpenOption.APPEND);
-		EmployeeData.add(new EmployeeModel(idGenerator, name, designation, business, manager));
+		employeeData.add(new EmployeeModel(idGenerator, name, designation, business, manager));
 		idGenerator++;
 	}
 
