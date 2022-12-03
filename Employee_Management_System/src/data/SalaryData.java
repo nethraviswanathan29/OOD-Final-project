@@ -38,7 +38,7 @@ public class SalaryData {
 					salaryModel.setSalaryPerAnnum(details[2]);
 					salaryModel.setSalaryRevision(details[3]);
 					salaryModel.setDepartment(details[4]);
-					salaryByDepartment.put(details[4], salaryByDepartment.get(details[4]) + Integer.parseInt(details[0]));
+					salaryByDepartment.put(details[4], salaryByDepartment.get(details[4]) + Integer.parseInt(details[2]));
 					return salaryModel;
 				}).collect(Collectors.toList());
 
