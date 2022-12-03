@@ -11,63 +11,74 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="856.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="856.0" prefWidth="1428.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
    <children>
-      <Pane layoutX="44.0" layoutY="35.0" prefHeight="86.0" prefWidth="1231.0" style="-fx-border-color: #11488f; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 3px;">
+      <Pane layoutX="44.0" layoutY="35.0" prefHeight="86.0" prefWidth="1361.0" style="-fx-border-color: #11488f; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 3px;">
          <children>
             <Label layoutX="29.0" layoutY="25.0" prefHeight="37.0" prefWidth="439.0" text="Employee Management System" textFill="#11488f">
                <font>
                   <Font name="Helvetica Neue" size="29.0" />
                </font>
             </Label>
-            <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1094.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1242.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/home.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1155.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1305.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/logout.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <GridPane alignment="BOTTOM_RIGHT" hgap="20.0" layoutX="270.0" layoutY="285.0" prefHeight="220.0" prefWidth="800.0" vgap="20.0" AnchorPane.topAnchor="285.0">
+      <GridPane alignment="BOTTOM_RIGHT" hgap="20.0" layoutX="673.0" layoutY="154.0" prefHeight="663.0" prefWidth="626.0" vgap="20.0" AnchorPane.topAnchor="154.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="230.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="235.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+            <ColumnConstraints />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
+          <RowConstraints />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="373.4503173828125" minHeight="10.0" prefHeight="78.00253295898438" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="Dashboard" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="103.0" prefWidth="265.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-background-color: none; -fx-border-width: 2px; -fx-text-fill: #11488f;" text="Dashboard">
+            <Button fx:id="Dashboard" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px;" text="Dashboard" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
-                  <Font name="System Bold" size="19.0" />
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="Employees" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-text-fill: #11488f; -fx-border-radius: 5px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px;" text="Employees" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+            <Button fx:id="Salaries" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-width: 2px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-radius: 5px;" text="Salaries" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="32.0" />
                </font></Button>
-            <Button fx:id="Employees" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="103.0" prefWidth="258.0" style="-fx-border-color: #11488f; -fx-text-fill: #11488f; -fx-border-radius: 5px; -fx-background-color: none; -fx-border-width: 2px;" text="Employees" GridPane.columnIndex="1">
+            <Button fx:id="Workshops" layoutX="250.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="86.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px;" text="Workshops" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <font>
-                  <Font size="19.0" />
+                  <Font size="32.0" />
                </font></Button>
-            <Button fx:id="Salaries" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="210.0" prefWidth="233.0" style="-fx-border-color: #11488f; -fx-border-width: 2px; -fx-background-color: none; -fx-border-radius: 5px;" text="Salaries" textFill="#11488f" GridPane.rowIndex="1">
+            <Button fx:id="Departments" layoutX="250.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff);" text="Departments " textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
-                  <Font size="19.0" />
+                  <Font size="32.0" />
                </font></Button>
-            <Button fx:id="Workshops" layoutX="250.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="195.0" prefWidth="233.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-background-color: none; -fx-border-width: 2px;" text="Workshops" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="Annoucements" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px; -fx-border-radius: 5px;" text="Announcements" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <font>
-                  <Font size="19.0" />
-               </font></Button>
-            <Button fx:id="Departments" layoutX="250.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="147.0" prefWidth="226.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: none;" text="Departments " textFill="#11488f" GridPane.columnIndex="2">
-               <font>
-                  <Font size="19.0" />
-               </font></Button>
-            <Button fx:id="Annoucements" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="170.0" prefWidth="226.0" style="-fx-border-color: #11488f; -fx-background-color: none; -fx-border-width: 2px; -fx-border-radius: 5px;" text="Announcements" textFill="#11488f" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <font>
-                  <Font size="19.0" />
+                  <Font size="32.0" />
                </font></Button>
          </children>
       </GridPane>
+      <ImageView fitHeight="303.0" fitWidth="732.0" layoutX="-35.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/An-Introduction-to-People-Management-removebg-preview.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
