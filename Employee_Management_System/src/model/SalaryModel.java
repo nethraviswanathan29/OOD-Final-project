@@ -9,19 +9,19 @@ public class SalaryModel {
 	private SimpleStringProperty name;
 	private SimpleStringProperty salaryPerAnnum;
 	private SimpleStringProperty salaryRevision;
-	private SimpleStringProperty employeeType;
+	private SimpleStringProperty department;
 
 	public SalaryModel() {
 		super();
 	}
 
-	public SalaryModel(Integer id, String name, String salaryPerAnnum, String salaryRevision, String employeeType) {
+	public SalaryModel(Integer id, String name, String salaryPerAnnum, String salaryRevision, String department) {
 		super();
 		this.id = new SimpleIntegerProperty(id);
 		this.name = new SimpleStringProperty(name);
 		this.salaryPerAnnum = new SimpleStringProperty(salaryPerAnnum);
 		this.salaryRevision = new SimpleStringProperty(salaryRevision);
-		this.employeeType = new SimpleStringProperty(employeeType);
+		this.department = new SimpleStringProperty(department);
 	}
 
 	public String getName() {
@@ -48,11 +48,11 @@ public class SalaryModel {
 	public void setSalaryRevision(String salaryRevision) {
 		this.salaryRevision = new SimpleStringProperty(salaryRevision);
 	}
-	public String getEmployeeType() {
-		return employeeType.get();
+	public String getDepartment() {
+		return department.get();
 	}
-	public void setEmployeeType(String employeeType) {
-		this.employeeType = new SimpleStringProperty(employeeType);
+	public void setDepartment(String department) {
+		this.department = new SimpleStringProperty(department);
 	}
 
 }

@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -47,10 +48,13 @@ public class SalaryController implements Initializable {
     public TableColumn<SalaryModel, String> salaryRevision;
     
     @FXML
-    public TableColumn<SalaryModel, String> employeeType;
+    public TableColumn<SalaryModel, String> department;
     
     @FXML
     public Button addNewEmployee;
+    
+    @FXML
+    private PieChart salaryPieChart;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -69,11 +73,12 @@ public class SalaryController implements Initializable {
     	employeeName.setCellValueFactory(new PropertyValueFactory<>("Name"));
     	salaryPerAnnum.setCellValueFactory(new PropertyValueFactory<>("SalaryPerAnnum"));
     	salaryRevision.setCellValueFactory(new PropertyValueFactory<>("SalaryRevision"));
-    	employeeType.setCellValueFactory(new PropertyValueFactory<>("EmployeeType"));
+    	department.setCellValueFactory(new PropertyValueFactory<>("Department"));
     	SalaryData.loadData();
     	salaryTable.setItems(SalaryData.salaryData);
+    	salaryPieChart.setData(SalaryData.salaryPieChartData);
     }
-
+    
     private void loadStage(String fxml) {
         try {
         	AnchorPane pane = FXMLLoader.load(getClass().getResource(fxml));
