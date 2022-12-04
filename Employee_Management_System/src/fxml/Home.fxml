@@ -39,7 +39,6 @@
             <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="84.99746704101562" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="373.4503173828125" minHeight="10.0" prefHeight="78.00253295898438" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Button fx:id="Dashboard" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px;" text="Dashboard" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -56,15 +55,11 @@
                <font>
                   <Font size="32.0" />
                </font></Button>
-            <Button fx:id="Workshops" layoutX="250.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="86.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px;" text="Workshops" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <Button fx:id="Workshops" layoutX="250.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="86.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px;" text="Workshops" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <font>
                   <Font size="32.0" />
                </font></Button>
             <Button fx:id="Departments" layoutX="250.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff);" text="Departments " textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="3">
-               <font>
-                  <Font size="32.0" />
-               </font></Button>
-            <Button fx:id="Annoucements" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="92.0" prefWidth="633.0" style="-fx-border-color: #11488f; -fx-background-color: linear-gradient(to right, #83a4d4, #b6fbff); -fx-border-width: 2px; -fx-border-radius: 5px;" text="Announcements" textFill="#11488f" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <font>
                   <Font size="32.0" />
                </font></Button>

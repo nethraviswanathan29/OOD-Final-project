@@ -17,6 +17,7 @@ import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
@@ -37,7 +38,7 @@ public class WorkshopsController implements Initializable {
 	private Accordion accordion;
 
 	@FXML
-	private Button workshopsHomeButton;
+	private ImageView workshopsHomeButton;
 
 	@FXML
 	private Button newWorkshop;
@@ -54,14 +55,15 @@ public class WorkshopsController implements Initializable {
 	}
 
 	public void handleButtonClicks(ActionEvent mouseEvent) throws IOException {
-		if (mouseEvent.getSource() == workshopsHomeButton) {
-			loadStage("/fxml/Home.fxml");
-		}
 
 		if (mouseEvent.getSource() == newWorkshop) {
 			loadNewStage("/fxml/NewWorkshop.fxml");
 		}
 	}
+	
+	public void redirectHome() {
+    	loadStage("/fxml/Home.fxml");
+    }
 
 	private void loadNewStage(String fxml) {
 		try {
