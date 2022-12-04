@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 public class DepartmentsController implements Initializable {
@@ -17,7 +18,7 @@ public class DepartmentsController implements Initializable {
 	private AnchorPane departmentsPane;
 	
 	@FXML
-	private Button departmentsHomeButton;
+	private ImageView departmentsHomeButton;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -29,6 +30,10 @@ public class DepartmentsController implements Initializable {
         if (mouseEvent.getSource() == departmentsHomeButton) {
         	loadStage("/fxml/Home.fxml");
         }
+    }
+	
+	public void redirectHome() {
+    	loadStage("/fxml/Home.fxml");
     }
 	
 	private void loadStage(String fxml) {

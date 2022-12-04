@@ -20,11 +20,6 @@
                   <Font name="Helvetica Neue" size="29.0" />
                </font>
             </Label>
-            <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1242.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/home.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1305.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/logout.png" />

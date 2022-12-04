@@ -10,7 +10,7 @@
 
 <AnchorPane fx:id="newEmployeePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="600.0" stylesheets="@../home/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewEmployeeController">
    <children>
-      <ComboBox fx:id="department" layoutX="147.0" layoutY="425.0" prefHeight="38.0" prefWidth="306.0" style="-fx-background-color: #fff;" styleClass="new_employee_input" />
+      <ComboBox fx:id="department" layoutX="147.0" layoutY="425.0" minHeight="-Infinity" prefHeight="38.0" prefWidth="306.0" style="-fx-background-color: #fff;" styleClass="new_employee_combo" />
       <TextField fx:id="salary" layoutX="147.0" layoutY="246.0" prefHeight="41.0" prefWidth="306.0" promptText="Enter Employee Salary" styleClass="new_employee_input" />
       <TextField fx:id="salaryRevision" layoutX="147.0" layoutY="369.0" prefHeight="38.0" prefWidth="306.0" promptText="Enter Salary Revision" styleClass="new_employee_input" />
       <TextField fx:id="name" layoutX="147.0" layoutY="135.0" prefHeight="38.0" prefWidth="306.0" promptText="Enter Employee Name" styleClass="new_employee_input" stylesheets="@../home/style.css" />

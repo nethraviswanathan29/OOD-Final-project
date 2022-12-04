@@ -90,6 +90,7 @@ public class NewEmployeeController implements Initializable {
 		department.getItems().add("Back-End");
 		department.getItems().add("Front-End");
 		department.getItems().add("Testing");
+		department.setPromptText("Select Department");
     }
 	
 	private void loadStage(String fxml) {
