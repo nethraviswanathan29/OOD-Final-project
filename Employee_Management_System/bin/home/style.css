@@ -1,15 +1,4 @@
-.button
-{
--fx-background-color : #F3F3F3;
-}
-.button:hover
-{
--fx-background-color : #A1C1F4 ;
-}
-.button:pressed
-{
--fx-background-color : #73A3EF ;
-}
+
 
 .table-view .column-header{
     -fx-background-color: #11488f;
@@ -17,13 +6,10 @@
      -fx-text-background-color: #fff;
 }
 
-.table-view: odd{
-    -fx-background-color: blue;
-   -fx-background-insets: 0, 0 0 1 0;
-    -fx-padding: 0.0em;
-}
-.table-view: even{
-    -fx-background-color: yellow;
-   -fx-background-insets: 0, 0 0 1 0;
-    -fx-padding: 0.0em;
+.new_employee_input{
+	 -fx-border-color : #11488f;
+	 -fx-border-width : 2px;
+	 -fx-border-radius : 5px;
+	 -fx-padding : 10px; 
+	 -fx-background-color: #fff;
 }
