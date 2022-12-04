@@ -51,6 +51,13 @@ public class EmployeeController implements Initializable {
     @FXML
     public Button addNewEmployee;
     
+    @FXML
+	private ImageView logout;
+	
+	public void logOut() {
+    	loadStage("/fxml/Login.fxml");
+    }
+    
     public void handleButtonClicks(ActionEvent mouseEvent) throws IOException {
         if (mouseEvent.getSource() == home) {
         	loadStage("/fxml/Home.fxml");

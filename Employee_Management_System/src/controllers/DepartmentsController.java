@@ -19,6 +19,13 @@ public class DepartmentsController implements Initializable {
 	
 	@FXML
 	private ImageView departmentsHomeButton;
+	
+	@FXML
+	private ImageView logout;
+	
+	public void logOut() {
+    	loadStage("/fxml/Login.fxml");
+    }
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -35,6 +42,8 @@ public class DepartmentsController implements Initializable {
 	public void redirectHome() {
     	loadStage("/fxml/Home.fxml");
     }
+	
+	
 	
 	private void loadStage(String fxml) {
         try {

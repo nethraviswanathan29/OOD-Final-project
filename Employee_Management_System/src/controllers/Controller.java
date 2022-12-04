@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 public class Controller implements Initializable{
@@ -38,6 +39,10 @@ public class Controller implements Initializable{
     @FXML
     private PieChart pieChart;
     
+    @FXML
+    private ImageView logout;
+	
+
     public void handleButtonClicks(ActionEvent mouseEvent) throws IOException {
         if (mouseEvent.getSource() == Dashboard) {
             //Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
@@ -58,6 +63,10 @@ public class Controller implements Initializable{
             loadStage("/fxml/Annoucements.fxml");
         }
     }
+    
+    public void logOut() {
+    	loadStage("/fxml/Login.fxml");
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -69,6 +78,7 @@ public class Controller implements Initializable{
 //    	
 //    	pieChart.setData(pieChartData);
     }
+    
     
     private void loadStage(String fxml) {
         try {

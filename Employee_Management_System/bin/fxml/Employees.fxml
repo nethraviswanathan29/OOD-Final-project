@@ -14,7 +14,7 @@
    <children>
       <Pane layoutX="34.0" prefHeight="86.0" prefWidth="1361.0" style="-fx-border-width: 3px; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #11488f;">
          <children>
-            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Employee Management System" textFill="#11488f">
+            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Employees" textFill="#11488f">
                <font>
                   <Font name="Helvetica Neue" size="29.0" />
                </font>
@@ -47,15 +47,15 @@
             <Image url="@../images/home.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1315.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="logout" onMousePressed="#logOut" fitHeight="37.0" fitWidth="35.0" layoutX="1315.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/logout.png" />
          </image>
       </ImageView>
-      <Label layoutX="95.0" layoutY="134.0" text="View Employees here" textFill="#11488f">
+      <!-- <Label layoutX="95.0" layoutY="134.0" text="View Employees here" textFill="#11488f">
          <font>
             <Font size="24.0" />
          </font>
-      </Label>
+      </Label> -->
    </children>
 </AnchorPane>

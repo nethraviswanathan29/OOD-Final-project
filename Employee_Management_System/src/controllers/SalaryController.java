@@ -56,6 +56,13 @@ public class SalaryController implements Initializable {
     
     @FXML
     private PieChart salaryPieChart;
+    
+    @FXML
+	private ImageView logout;
+	
+	public void logOut() {
+    	loadStage("/fxml/Login.fxml");
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

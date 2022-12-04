@@ -12,54 +12,61 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<SplitPane dividerPositions="0.5753856942496494" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="856.0" prefWidth="1428.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
-  <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="784.0" style="-fx-background-color: #fff;">
-         <children>
-            <ImageView fitHeight="706.0" fitWidth="629.0" layoutX="55.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/login.gif" />
-               </image>
-            </ImageView>
-         </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #11488f;">
-         <children>
-            <Pane layoutX="21.0" layoutY="161.0" prefHeight="543.0" prefWidth="567.0">
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <SplitPane dividerPositions="0.5753856942496494" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="856.0" prefWidth="1428.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="784.0" style="-fx-background-color: #fff;">
                <children>
-                  <Label layoutX="73.0" layoutY="156.0" text="Username" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="73.0" layoutY="277.0" text="Password" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="username" layoutX="73.0" layoutY="200.0" prefHeight="53.0" prefWidth="421.0" promptText="Username">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </TextField>
-                  <PasswordField fx:id="password" layoutX="73.0" layoutY="314.0" prefHeight="53.0" prefWidth="421.0" promptText="Password" />
-                  <Button fx:id="button" layoutX="73.0" layoutY="411.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="46.0" prefWidth="421.0" style="-fx-background-color: #fff;" text="Log In" textFill="#11488f">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Label fx:id="wrongLogIn" layoutX="153.0" layoutY="127.0" textFill="RED" />
-                  <Text fill="WHITE" layoutX="78.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Management System">
-                     <font>
-                        <Font name="Cochin" size="32.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="243.0" layoutY="76.0" text="Hello Again!" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
+                  <ImageView fitHeight="706.0" fitWidth="629.0" layoutX="55.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/login.gif" />
+                     </image>
+                  </ImageView>
                </children>
-            </Pane>
-         </children></AnchorPane>
-  </items>
-</SplitPane>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #11488f;">
+               <children>
+                  <Pane layoutX="21.0" layoutY="161.0" prefHeight="543.0" prefWidth="567.0">
+                     <children>
+                        <Label layoutX="73.0" layoutY="156.0" text="Username" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="277.0" text="Password" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username" layoutX="73.0" layoutY="200.0" prefHeight="53.0" prefWidth="421.0" promptText="Username">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="password" layoutX="73.0" layoutY="314.0" prefHeight="53.0" prefWidth="421.0" promptText="Password" />
+                        <Button fx:id="button" layoutX="73.0" layoutY="411.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="46.0" prefWidth="421.0" style="-fx-background-color: #fff;" text="Log In" textFill="#11488f">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="wrongLogIn" layoutX="153.0" layoutY="127.0" textFill="RED" />
+                        <Text fill="WHITE" layoutX="78.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Management System">
+                           <font>
+                              <Font name="Cochin" size="32.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="243.0" layoutY="76.0" text="Hello Again!" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

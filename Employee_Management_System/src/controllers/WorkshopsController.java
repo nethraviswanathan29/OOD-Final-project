@@ -48,6 +48,13 @@ public class WorkshopsController implements Initializable {
 
 	@FXML
 	private Button newWorkshop;
+	
+	@FXML
+	private ImageView logout;
+	
+	public void logOut() {
+    	loadStage("/fxml/Login.fxml");
+    }
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
