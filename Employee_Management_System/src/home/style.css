@@ -10,3 +10,20 @@
 {
 -fx-background-color : #73A3EF ;
 }
+
+.table-view .column-header{
+    -fx-background-color: #11488f;
+    -fx-padding: 20px;
+     -fx-text-background-color: #fff;
+}
+
+.table-view: odd{
+    -fx-background-color: blue;
+   -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-view: even{
+    -fx-background-color: yellow;
+   -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}

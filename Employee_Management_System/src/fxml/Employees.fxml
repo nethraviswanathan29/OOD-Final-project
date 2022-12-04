@@ -4,27 +4,29 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="employeesPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EmployeeController">
+<AnchorPane fx:id="employeesPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="1428.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EmployeeController">
    <children>
-      <Pane prefHeight="86.0" prefWidth="1361.0" style="-fx-background-color: #A9B7C0;">
+      <Pane layoutX="34.0" prefHeight="86.0" prefWidth="1361.0" style="-fx-border-width: 3px; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #11488f;">
          <children>
-            <Label layoutX="31.0" layoutY="82.0" prefHeight="37.0" prefWidth="566.0" text="Employees" textFill="WHITE">
+            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Employee Management System" textFill="#11488f">
                <font>
-                  <Font name="Copperplate" size="36.0" />
+                  <Font name="Helvetica Neue" size="29.0" />
                </font>
             </Label>
-            <Button fx:id="home" layoutX="1222.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="Home">
+            <!-- <Button fx:id="home" layoutX="1043.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="Home">
                <font>
                   <Font size="25.0" />
                </font>
-            </Button>
+            </Button> -->
          </children>
       </Pane>
-      <TableView fx:id="employeesTable" layoutX="247.0" layoutY="291.0" prefHeight="200.0" prefWidth="798.0" snapToPixel="false">
+      <TableView fx:id="employeesTable" layoutX="91.0" layoutY="206.0" prefHeight="374.0" prefWidth="1230.0" snapToPixel="false" stylesheets="@../home/style.css">
         <columns>
         	<TableColumn fx:id="employeeId" prefWidth="75.0" text="Employee Id" />
         	<TableColumn fx:id="employeeName" prefWidth="75.0" text="Employee Name" />
@@ -36,6 +38,24 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button fx:id="addNewEmployee" layoutX="585.0" layoutY="616.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="Add new employee" />
+      <Button fx:id="addNewEmployee" layoutX="1165.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleButtonClicks" style="-fx-background-color: #11488f; -fx-padding: 10px;" text="Add new employee" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <ImageView fx:id="home" fitHeight="37.0" fitWidth="35.0" layoutX="1252.0" layoutY="31.0" onMousePressed="#redirectHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="1315.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="95.0" layoutY="134.0" text="View Employees here" textFill="#11488f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
