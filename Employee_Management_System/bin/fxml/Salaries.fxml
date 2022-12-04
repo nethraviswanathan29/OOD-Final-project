@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="salaryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="749.0" prefWidth="1453.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SalaryController">
    <children>
-      <TableView fx:id="salaryTable" layoutX="72.0" layoutY="274.0" prefHeight="342.0" prefWidth="742.0">
+      <TableView fx:id="salaryTable" layoutX="72.0" layoutY="274.0" prefHeight="342.0" prefWidth="742.0" stylesheets="@../home/style.css">
         <columns>
           <TableColumn fx:id="employeeId" prefWidth="75.0" text="Employee Id" />
           <TableColumn fx:id="employeeName" prefWidth="75.0" text="Employee Name" />
@@ -48,5 +48,10 @@
             <Image url="@../images/logout.png" />
          </image>
       </ImageView>
+      <Label layoutX="73.0" layoutY="211.0" text="View Salary Details of Employees here" textFill="#11488f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
