@@ -1,5 +1,5 @@
-1, Jones,50000$,3%,Full-Time
-2, Kaushik ,60000$,2.5%,Full-Time
-3, Nethra ,700000,4%,Full-Time
-4, Shobith ,650000,5%,Full-Time
-5, Ruchithra,55000,4.5,Full-Time
+1, Jones,150000,3%,HR
+2, Kaushik ,90000,2.5%,Back-End
+3, Nethra ,90000,4%,Front-End
+4, Shobith ,90000,5%,Back-End
+5, Ruchithra,90000,4.5,Testing
