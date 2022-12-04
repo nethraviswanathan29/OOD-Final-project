@@ -22,3 +22,6 @@
 	 
 	 -fx-background-color: #fff;
  }
+ .titled-pane {
+    -fx-padding: 0 0 0.5em 0;
+}

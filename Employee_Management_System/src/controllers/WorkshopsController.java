@@ -19,7 +19,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TitledPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Border;
+import javafx.scene.layout.BorderStroke;
+import javafx.scene.layout.BorderStrokeStyle;
+import javafx.scene.layout.BorderWidths;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
@@ -93,6 +99,7 @@ public class WorkshopsController implements Initializable {
 		for(WorkshopModel workshop : workshopsList) {
 			TitledPane tp = new TitledPane();
 			tp.setFont(Font.font("System", FontWeight.NORMAL ,FontPosture.REGULAR, 23));
+			
 			tp.setText(workshop.getTitle());
 			AnchorPane ap = new AnchorPane();
 			ap.getChildren().add(new Label(workshop.getDescription()));

@@ -11,7 +11,7 @@
 
 <AnchorPane fx:id="workshopsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="1449.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WorkshopsController">
    <children>
-      <Accordion fx:id="accordion" layoutX="115.0" layoutY="297.0" prefHeight="259.0" prefWidth="1209.0" />
+      <Accordion fx:id="accordion" layoutX="115.0" layoutY="297.0" prefHeight="259.0" prefWidth="1209.0" styleClass="accordian" stylesheets="@../home/style.css" />
       <Button fx:id="newWorkshop" layoutX="1194.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonClicks" style="-fx-background-color: #11488f; -fx-padding: 10px;" text="Add New Workshop" textFill="WHITE" />
       <Pane layoutX="44.0" layoutY="10.0" prefHeight="86.0" prefWidth="1361.0" style="-fx-border-width: 3px; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #11488f;">
          <children>
