@@ -55,9 +55,10 @@ public class EmployeeData {
 
 	}
 
-	public static void addEmployee(String name, String designation, String business, String manager) throws IOException {
-		Files.write(Paths.get("EmployeeData.txt"), ("\n" + idGenerator + "," + name + "," + designation + "," + business  + "," + manager).getBytes(), StandardOpenOption.APPEND);
-		employeeData.add(new EmployeeModel(idGenerator, name, designation, business, manager));
+	public static void addEmployee(String name, String designation, String department, String manager, Integer salary, Float salaryRevision) throws IOException {
+		Files.write(Paths.get("EmployeeData.txt"), ("\n" + idGenerator + "," + name + "," + designation + "," + department  + "," + manager).getBytes(), StandardOpenOption.APPEND);
+		Files.write(Paths.get("SalaryData.txt"), ("\n" + idGenerator + "," + name + "," + salary + "," + salaryRevision  + "," + department).getBytes(), StandardOpenOption.APPEND);
+		employeeData.add(new EmployeeModel(idGenerator, name, designation, department, manager));
 		idGenerator++;
 	}
 

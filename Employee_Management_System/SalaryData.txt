@@ -1,5 +1,5 @@
-1, Jones,150000,3%,HR
-2, Kaushik ,90000,2.5%,Back-End
-3, Nethra ,90000,4%,Front-End
-4, Shobith ,90000,5%,Back-End
-5, Ruchithra,90000,4.5,Testing
+1,Jones,150000,3,HR
+2,Kaushik ,90000,2.5%,Back-End
+3,Nethra ,90000,4%,Front-End
+4,Shobith ,90000,5%,Back-End
+5,Ruchithra,90000,4.5,Testing

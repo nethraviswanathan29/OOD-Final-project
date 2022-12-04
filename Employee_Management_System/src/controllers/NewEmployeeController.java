@@ -39,9 +39,15 @@ public class NewEmployeeController implements Initializable {
 	@FXML
 	private TextField manager;
 	
+	@FXML
+	private TextField salary;
+	
+	@FXML
+	private TextField salaryRevision;
+	
 	public void handleButtonClicks(ActionEvent mouseEvent) throws IOException {
         if (mouseEvent.getSource() == add) {
-        	EmployeeData.addEmployee(name.getText(), designation.getText(), department.getText(), manager.getText());
+        	EmployeeData.addEmployee(name.getText(), designation.getText(), department.getText(), manager.getText(), Integer.parseInt(salary.getText()), Float.parseFloat(salaryRevision.getText()));
         	Stage stage = (Stage) cancel.getScene().getWindow();
             stage.close();
             Alert alert = new Alert(AlertType.INFORMATION);
