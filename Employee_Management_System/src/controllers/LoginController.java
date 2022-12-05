@@ -39,6 +39,12 @@ public class LoginController {
     	window.setScene(new Scene (root,2000,1000));
     	
     }
+    else if(username.getText().toString().equals("nethra") && password.getText().toString().equals("123")) {
+    	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
+    	
+    	Stage window = (Stage) button.getScene().getWindow();
+    	window.setScene(new Scene (root,2000,1000));
+    }
     else if(username.getText().isEmpty() && password.getText().isEmpty()) {
         wrongLogIn.setText("Please enter your data.");
     }
