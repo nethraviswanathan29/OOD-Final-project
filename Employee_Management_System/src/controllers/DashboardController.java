@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import data.DashboardData;
+import data.EmployeeData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -90,11 +91,15 @@ public class DashboardController implements Initializable {
     	date.setCellValueFactory(new PropertyValueFactory<>("Date"));
     	hours.setCellValueFactory(new PropertyValueFactory<>("Hours"));
     	Integer totalhours = 0;
+    	int i = 0;
     	for(DashboardModel dm : DashboardData.dashboardData) {
     		totalhours += dm.getHours();
+    		i++;
     	}
     	billHours.setText("" + totalhours);
     	dashboardTable.setItems(DashboardData.dashboardData);
+    	EmployeeData.loadData();
+    	noOfEmployees.setText("" + EmployeeData.employeeData.size());
 	}
 
 }

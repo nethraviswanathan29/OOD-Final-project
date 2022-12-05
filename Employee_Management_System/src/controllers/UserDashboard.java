@@ -110,7 +110,7 @@ public class UserDashboard implements Initializable{
         	DashboardData.addDashboardData(Integer.parseInt(id.getText()), name.getText(), dateTime.getText(), 9);
             Alert alert = new Alert(AlertType.INFORMATION);
             alert.setTitle("Timesheet");
-            alert.setContentText("Checkd-in successfully");
+            alert.setContentText("Checked-in successfully");
             alert.showAndWait();
         }
     }
