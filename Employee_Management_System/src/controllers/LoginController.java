@@ -42,6 +42,7 @@ public class LoginController {
     	
     }
     else if(username.getText().toString().equals("Nethra") && password.getText().toString().equals("123")) {
+    	user = "Nethra";
     	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
     	
     	Stage window = (Stage) button.getScene().getWindow();
@@ -49,6 +50,27 @@ public class LoginController {
     }
     else if(username.getText().toString().equals("Shobith") && password.getText().toString().equals("123")) {
     	user = "Shobith";
+    	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
+    	
+    	Stage window = (Stage) button.getScene().getWindow();
+    	window.setScene(new Scene (root,2000,1000));
+    }
+    else if(username.getText().toString().equals("Jones") && password.getText().toString().equals("123")) {
+    	user = "Jones";
+    	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
+    	
+    	Stage window = (Stage) button.getScene().getWindow();
+    	window.setScene(new Scene (root,2000,1000));
+    }
+    else if(username.getText().toString().equals("Kaushik") && password.getText().toString().equals("123")) {
+    	user = "Kaushik";
+    	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
+    	
+    	Stage window = (Stage) button.getScene().getWindow();
+    	window.setScene(new Scene (root,2000,1000));
+    }
+    else if(username.getText().toString().equals("Ruchithra") && password.getText().toString().equals("123")) {
+    	user = "Ruchithra";
     	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
     	
     	Stage window = (Stage) button.getScene().getWindow();
