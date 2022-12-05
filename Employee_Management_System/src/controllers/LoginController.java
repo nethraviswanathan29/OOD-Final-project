@@ -14,6 +14,8 @@ import java.io.IOException;
 
 
 public class LoginController {
+	
+	public static String user = "";
 
     public LoginController() {
 
@@ -39,7 +41,14 @@ public class LoginController {
     	window.setScene(new Scene (root,2000,1000));
     	
     }
-    else if(username.getText().toString().equals("nethra") && password.getText().toString().equals("123")) {
+    else if(username.getText().toString().equals("Nethra") && password.getText().toString().equals("123")) {
+    	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
+    	
+    	Stage window = (Stage) button.getScene().getWindow();
+    	window.setScene(new Scene (root,2000,1000));
+    }
+    else if(username.getText().toString().equals("Shobith") && password.getText().toString().equals("123")) {
+    	user = "Shobith";
     	Parent root = FXMLLoader.load(getClass().getResource("../fxml/UserDashboard.fxml"));
     	
     	Stage window = (Stage) button.getScene().getWindow();

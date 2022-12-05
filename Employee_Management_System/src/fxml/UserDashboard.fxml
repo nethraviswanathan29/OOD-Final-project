@@ -19,7 +19,7 @@
    <children>
       <Pane layoutX="54.0" layoutY="45.0" prefHeight="86.0" prefWidth="1361.0" style="-fx-border-color: #11488f; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 3px;">
          <children>
-            <Label layoutX="29.0" layoutY="25.0" prefHeight="37.0" prefWidth="439.0" text="Welcome Nethra," textFill="#11488f">
+            <Label layoutX="29.0" layoutY="25.0" prefHeight="37.0" prefWidth="439.0" text="Welcome" textFill="#11488f">
                <font>
                   <Font name="Helvetica Neue" size="29.0" />
                </font>
@@ -78,7 +78,7 @@
                               </Pane>
                               <Pane prefHeight="50.0" prefWidth="236.0">
                                  <children>
-                                    <Label layoutX="85.0" layoutY="17.0" text="1505104" />
+                                    <Label fx:id="id" layoutX="85.0" layoutY="17.0" />
                                  </children>
                               </Pane>
                            </children>
@@ -92,7 +92,7 @@
                               </Pane>
                               <Pane prefHeight="50.0" prefWidth="236.0">
                                  <children>
-                                    <Label layoutX="85.0" layoutY="17.0" text="Nethra V" />
+                                    <Label fx:id="name" layoutX="85.0" layoutY="17.0" />
                                  </children>
                               </Pane>
                            </children>
@@ -106,7 +106,7 @@
                               </Pane>
                               <Pane prefHeight="50.0" prefWidth="236.0">
                                  <children>
-                                    <Label layoutX="85.0" layoutY="17.0" text="Jones" />
+                                    <Label fx:id="reportsTo" layoutX="85.0" layoutY="17.0" />
                                  </children>
                               </Pane>
                            </children>
@@ -120,19 +120,19 @@
                               </Pane>
                               <Pane prefHeight="50.0" prefWidth="236.0">
                                  <children>
-                                    <Label layoutX="85.0" layoutY="17.0" text="Front-End" />
+                                    <Label fx:id="department" layoutX="85.0" layoutY="17.0" />
                                  </children>
                               </Pane>
                            </children>
                         </HBox>
                      </children>
                   </VBox>
-                  <Button fx:id="present" layoutX="273.0" layoutY="261.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="130.0" style="-fx-background-color: #11488f;" text="Check-In" textFill="WHITE">
+                  <Button fx:id="present" layoutX="273.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="48.0" prefWidth="130.0" style="-fx-background-color: #11488f;" text="Check-In" textFill="WHITE">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="absent" layoutX="112.0" layoutY="262.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="130.0" style="-fx-background-color: #D22B2B;" text="Leave" textFill="WHITE">
+                  <Button fx:id="absent" layoutX="112.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="48.0" prefWidth="130.0" style="-fx-background-color: #D22B2B;" text="Take Leave" textFill="WHITE">
                      <font>
                         <Font size="16.0" />
                      </font>

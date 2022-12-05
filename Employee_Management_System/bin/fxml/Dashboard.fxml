@@ -16,12 +16,12 @@
          <children>
             <Pane prefHeight="190.0" prefWidth="401.0" style="-fx-background-color: linear-gradient(to right, #36d1dc, #5b86e5);">
                <children>
-                  <Label layoutX="113.0" layoutY="126.0" text="Total No of Employees" textFill="WHITE">
+                  <Label fx:id="billHours" layoutX="113.0" layoutY="126.0" text="Total No of Employees" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="121.0" layoutY="41.0" prefHeight="68.0" prefWidth="123.0" text="0" textFill="WHITE">
+                  <Label fx:id="noOfEmployees" alignment="CENTER" layoutX="121.0" layoutY="41.0" prefHeight="68.0" prefWidth="123.0" text="0" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="48.0" />
                      </font>
@@ -30,12 +30,12 @@
             </Pane>
             <Pane prefHeight="190.0" prefWidth="401.0" style="-fx-background-color: linear-gradient(to right, #36d1dc, #5b86e5);">
                <children>
-                  <Label layoutX="105.0" layoutY="128.0" text="Billable Hours This Week" textFill="WHITE">
+                  <Label layoutX="137.0" layoutY="125.0" text="Billable Hours" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="128.0" layoutY="41.0" prefHeight="68.0" prefWidth="113.0" text="560" textFill="WHITE">
+                  <Label fx:id="billHours" alignment="CENTER" layoutX="128.0" layoutY="41.0" prefHeight="68.0" prefWidth="113.0" text="0" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="48.0" />
                      </font>
@@ -49,7 +49,7 @@
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="146.0" layoutY="35.0" prefHeight="68.0" prefWidth="59.0" text="2" textFill="WHITE">
+                  <Label alignment="CENTER" layoutX="146.0" layoutY="35.0" prefHeight="68.0" prefWidth="59.0" text="10" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="48.0" />
                      </font>
@@ -78,10 +78,12 @@
             </ImageView>
          </children>
       </Pane>
-      <TableView layoutX="88.0" layoutY="420.0" prefHeight="255.0" prefWidth="1294.0" styleClass="dashboardTable" stylesheets="@../home/style.css">
+      <TableView fx:id="dashboardTable" layoutX="88.0" layoutY="420.0" prefHeight="255.0" prefWidth="1294.0" styleClass="dashboardTable" stylesheets="@../home/style.css">
         <columns>
-          <TableColumn prefWidth="372.7557067871094" text="Employee Name" />
-          <TableColumn minWidth="0.0" prefWidth="467.9505310058594" text="ID" />
+          <TableColumn fx:id="name" minWidth="0.0" prefWidth="408.0" text="Employee Name" />
+            <TableColumn fx:id="id" prefWidth="277.0" text="ID" />
+            <TableColumn fx:id="date" minWidth="0.0" prefWidth="379.0" text="Date &amp; Time" />
+            <TableColumn fx:id="hours" prefWidth="229.0" text="Hours" />
         </columns>
       </TableView>
    </children>
