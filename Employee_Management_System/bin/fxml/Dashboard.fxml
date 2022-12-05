@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="dashboardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="1481.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
    <children>
-      <HBox layoutX="68.0" layoutY="196.0" prefHeight="190.0" prefWidth="1297.0" spacing="100.0">
+      <HBox layoutX="88.0" layoutY="198.0" prefHeight="190.0" prefWidth="1297.0" spacing="100.0">
          <children>
             <Pane prefHeight="190.0" prefWidth="401.0" style="-fx-background-color: linear-gradient(to right, #36d1dc, #5b86e5);">
                <children>
@@ -71,17 +71,17 @@
                   <Image url="@../images/logout.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="home" fitHeight="37.0" fitWidth="35.0" layoutX="1253.0" layoutY="31.0" onMousePressed="#redirectHome" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="dashboardHome" fitHeight="37.0" fitWidth="35.0" layoutX="1253.0" layoutY="31.0" onMousePressed="#redirectHome" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/home.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <TableView layoutX="66.0" layoutY="425.0" prefHeight="255.0" prefWidth="1294.0" stylesheets="@../home/style.css">
+      <TableView layoutX="88.0" layoutY="420.0" prefHeight="255.0" prefWidth="1294.0" styleClass="dashboardTable" stylesheets="@../home/style.css">
         <columns>
-          <TableColumn prefWidth="75.0" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn prefWidth="372.7557067871094" text="Employee Name" />
+          <TableColumn minWidth="0.0" prefWidth="467.9505310058594" text="ID" />
         </columns>
       </TableView>
    </children>

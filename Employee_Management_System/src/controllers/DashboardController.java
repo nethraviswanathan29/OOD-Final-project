@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 public class DashboardController implements Initializable {
@@ -17,12 +18,23 @@ public class DashboardController implements Initializable {
 	private AnchorPane dashboardPane;
 	
 	@FXML
-	private Button dashboardHome;
+	private ImageView dashboardHome;
+	
+	@FXML
+	private ImageView logout;
+	
+	public void logOut() {
+    	loadStage("/fxml/Login.fxml");
+    }
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public void redirectHome() {
+    	loadStage("/fxml/Home.fxml");
 	}
 	
 	public void handleButtonClicks(ActionEvent mouseEvent) throws IOException {

@@ -71,7 +71,7 @@
                   <Image url="@../images/logout.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="home" fitHeight="37.0" fitWidth="35.0" layoutX="1253.0" layoutY="31.0" onMousePressed="#redirectHome" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="dashboardHome" fitHeight="37.0" fitWidth="35.0" layoutX="1253.0" layoutY="31.0" onMousePressed="#redirectHome" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/home.png" />
                </image>
