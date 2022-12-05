@@ -31,7 +31,7 @@
       <PieChart fx:id="salaryPieChart" layoutX="878.0" layoutY="278.0" prefHeight="323.0" prefWidth="416.0" />
       <Pane layoutX="44.0" layoutY="10.0" prefHeight="86.0" prefWidth="1361.0" style="-fx-border-width: 3px; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #11488f;">
          <children>
-            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Employee Management System" textFill="#11488f">
+            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Salaries" textFill="#11488f">
                <font>
                   <Font name="Helvetica Neue" size="29.0" />
                </font>
@@ -48,10 +48,10 @@
             <Image url="@../images/logout.png" />
          </image>
       </ImageView>
-      <Label layoutX="73.0" layoutY="211.0" text="View Salary Details of Employees here" textFill="#11488f">
+      <!-- <Label layoutX="73.0" layoutY="211.0" text="View Salary Details of Employees here" textFill="#11488f">
          <font>
             <Font size="24.0" />
          </font>
-      </Label>
+      </Label> -->
    </children>
 </AnchorPane>

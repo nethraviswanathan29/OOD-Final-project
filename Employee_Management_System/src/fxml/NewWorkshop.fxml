@@ -7,22 +7,26 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="newWorkshopPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewWorkshopController">
+<AnchorPane fx:id="newWorkshopPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewWorkshopController">
    <children>
-      <Label layoutX="241.0" layoutY="74.0" text="Enter title of workshop" />
-      <Label layoutX="218.0" layoutY="156.0" text="Enter description for workshop" />
-      <TextField fx:id="title" layoutX="25.0" layoutY="103.0" prefHeight="25.0" prefWidth="552.0" promptText="Title" />
-      <TextField fx:id="description" layoutX="24.0" layoutY="200.0" prefHeight="103.0" prefWidth="552.0" promptText="Description" />
-      <Pane layoutX="1.0" prefHeight="74.0" prefWidth="600.0">
+      <TextField fx:id="title" layoutX="134.0" layoutY="141.0" prefHeight="37.0" prefWidth="306.0" promptText="Title" styleClass="new_employee_input" stylesheets="@../home/style.css" />
+      <TextField fx:id="description" layoutX="134.0" layoutY="201.0" prefHeight="103.0" prefWidth="306.0" promptText="Description" styleClass="new_employee_input" stylesheets="@../home/style.css" />
+      <Button fx:id="add" layoutX="300.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: #11488f;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="cancel" layoutX="134.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: none; -fx-border-color: #11488f; -fx-border-width: 2px; -fx-border-radius: 5px;" text="Cancel" textFill="#11488f">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Pane layoutX="51.0" prefHeight="86.0" prefWidth="502.0" style="-fx-border-width: 3px; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #11488f;">
          <children>
-            <Label layoutX="14.0" layoutY="23.0" text="New Workshop">
+            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Add New Employee" textFill="#11488f">
                <font>
-                  <Font size="23.0" />
+                  <Font name="Helvetica Neue" size="29.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Button fx:id="add" layoutX="384.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="Add" />
-      <Button fx:id="cancel" layoutX="163.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleButtonClicks" text="Cancel" />
    </children>
 </AnchorPane>

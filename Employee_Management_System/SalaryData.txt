@@ -3,3 +3,4 @@
 3,Nethra ,90000,4%,Front-End
 4,Shobith ,90000,5%,Back-End
 5,Ruchithra,90000,4.5,Testing
+6,venna,90000,8.0,Back-End

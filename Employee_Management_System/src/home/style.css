@@ -25,3 +25,8 @@
  .titled-pane {
     -fx-padding: 0 0 0.5em 0;
 }
+.dashboardTable .column-header{
+    -fx-background-color:  linear-gradient(to right, #36d1dc, #5b86e5);
+    -fx-padding: 20px;
+     -fx-text-background-color: #fff;
+}

@@ -28,7 +28,7 @@
       </Button>
       <Pane layoutX="44.0" layoutY="10.0" prefHeight="86.0" prefWidth="502.0" style="-fx-border-width: 3px; -fx-border-style: hidden hidden solid hidden; -fx-border-color: #11488f;">
          <children>
-            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Employee Management System" textFill="#11488f">
+            <Label layoutX="22.0" layoutY="25.0" prefHeight="37.0" prefWidth="566.0" text="Add New Employee" textFill="#11488f">
                <font>
                   <Font name="Helvetica Neue" size="29.0" />
                </font>
